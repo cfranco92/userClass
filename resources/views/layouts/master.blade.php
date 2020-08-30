@@ -6,9 +6,6 @@
 
         <title>@yield('title','Home Page')</title> 
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/customStyle.css') }}">
@@ -29,8 +26,8 @@
                         <ul class="navbar-nav mr-auto">
                             <!-- Future authentication Links -->
                             <ul>
+                                <a href=" {{ route('person.create') }}">Create</a>
                                 <a href="">Users</a>
-                                <a href=" {{ route('user.create') }}">Create</a>
                             </ul>
                         </ul>
     

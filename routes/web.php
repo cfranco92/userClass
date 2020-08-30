@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/create', 'UserController@create')->name("user.create");
+Route::get('/person/create', 'PersonController@create')->name("person.create");
+Route::post('/person/save', 'PersonController@save')->name("person.save");
